@@ -1,0 +1,46 @@
+@media screen and (min-width: 280px) and (max-width: 480px){
+
+    .header-container-nav {
+        justify-content: flex-start;
+
+    }
+
+    div > h1 {
+        font-size: 50px;
+    }
+    div > p {
+        font-size: 40px;
+    }
+
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    .content-container-AboutUS-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-container-AboutUS-content {
+        width: 55%;
+        margin: 25px;
+    }
+    .card{
+      width: 100%;
+    }
+    .card > img{
+        width: 100%;
+    }
+    .content-container-AboutUS-content-h2{
+        font-size: 45px;
+    }
+    .content-container-AboutUS-content-h3{
+        font-size: 40px;
+    }
+    .content-container-AboutUS-content-p{
+        font-size: 35px;
+    }
+
+
+}

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato-regular.ttf") format("truetype");
+}
+
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.header-container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container-nav-logo{
+    margin: 26px 40px;
+    display: flex;
+    align-items: center;
+
+}
+.header-container-nav-logo-text{
+    font-family: "Lato";
+    margin-left: 14px;
+}
+.header-container-nav-logo-text-h1{
+    font-family: "Lato";
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.header-container-nav-logo-text-p{
+    font-family: "Lato";
+    font-size: 8px;
+
+}
+
+.navBar-list{
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+}
+.navBar-list-item{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100px;
+    height: 38px;
+    /*margin: 15px;*/
+    /*padding: 15px;*/
+    color: #444444;
+    font-family: "Lato";
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navBar-list-item:hover {
+    box-sizing: border-box;
+    background: #1BBC9B;
+
+
+}
+
+
+.Jumbotron-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("../img/backgroundheader.svg") no-repeat ;
+    background-size: cover;
+    min-width: 1020px;
+    min-height: 453px;
+
+}
+.Jumbotron-conteiner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Jumbotron-conteiner-content-h1{
+    font-size: 55px;
+    font-weight: 300;
+    color: #eeeeee;
+}
+.Jumbotron-conteiner-content-h1 > span{
+    font-family: "Lato";
+    font-weight: 600;
+}
+
+.Jumbotron-conteiner-content-p{
+    font-family: "Lato";
+    font-size: 18px;
+    color: #eeeeee;
+
+}
+.Jumbotron-conteiner-content-btn{
+    width: 123px;
+    height: 38px;
+    background: #1BBC9B;
+    color: #eeeeee;
+    font-family: "Lato";
+    cursor: pointer;
+}
+
+.Jumbotron-conteiner-content-btnarrow{
+    margin-top: 42px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    outline: none;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+.Jumbotron-conteiner-content-btn:hover,
+.Jumbotron-conteiner-content-btnarrow:hover{
+    background: #16A086;
+}
+

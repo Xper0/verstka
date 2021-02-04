@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato-regular.ttf") format("truetype");
+}
+.footer-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2D3E50;
+}
+.footer-conteiner-content{
+    padding: 40px 40px;
+}
+.footer-conteiner-h3{
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 14px;
+
+}
+.footer-conteiner-btn{
+    width: 56px;
+    height: 45px;
+    background: #1BBC9B;
+    color: #ffffff;
+    font-size: 30px;
+    outline: none;
+    cursor: pointer;
+}
