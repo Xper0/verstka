@@ -9,11 +9,17 @@
     align-items: center;
     text-align: center;
 }
+.content-container-portfolio-h1{
+    margin-top: 54px;
+    margin-bottom: 17px;
+}
 .content-container-portfolio-list{
+    margin-top: 35px;
     display: flex;
     list-style: none;
     width: 100%;
     justify-content: center;
+
 }
 div > h1 {
     font-family: "Lato";
@@ -40,6 +46,7 @@ div > p> span {
     margin: 5px;
     color: #eeeeee;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 .content-container-portfolio-item:hover{
     background: #16A086;
@@ -54,7 +61,7 @@ div > p> span {
     height: 38px;
 }
 .content-container-portfolio-item:nth-of-type(3){
-    width: 145px;
+    min-width: 145px;
     height: 38px;
 }
 .content-container-portfolio-item:nth-of-type(4){
@@ -71,6 +78,7 @@ div > p> span {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
     /*position: relative;*/
 
 }
@@ -82,7 +90,8 @@ div > p> span {
     z-index: 0;
     position: relative;
 }
-.content-container-portfolio-imgconeiner:nth-of-type(2):after{
+
+.content-container-portfolio-imgconeiner:hover:after{
     content: "";
     background: #1BBC9B;
     opacity: 0.7;
@@ -93,7 +102,25 @@ div > p> span {
     left: 0;
     z-index: 1;
     border-radius: 50%;
+
 }
+/*.search:hover:after{*/
+/*    content: "";*/
+/*    display: block;*/
+/*    color: #eeeeee;*/
+/*    position: absolute;*/
+/*    background: black;*/
+/*    width: 44px;*/
+/*    height: 46px;*/
+/*    top: 65px;*/
+/*    left: 65px;*/
+/*    opacity: 0.66;*/
+/*    z-index: 1;*/
+/*    border-radius: 50%;*/
+/*}*/
+/*.search{*/
+/*   display: block;*/
+/*}*/
 
 
 
@@ -105,7 +132,14 @@ div > p> span {
     text-align: center;
     background: #16A086;
     min-height: 647px;
-
+}
+.content-container-AboutUS-h1{
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+.content-container-AboutUS-p{
+    margin-bottom: 43px;
+    opacity: 0.8;
 }
 .content-container-AboutUS-row{
     display: flex;
@@ -156,6 +190,7 @@ div > p> span {
 }
 
 .content-container-AboutUS-content-h2{
+    margin-top: 20px;
     font-family: "Lato";
     font-weight: 400;
     font-size: 18px;
@@ -163,7 +198,9 @@ div > p> span {
 
 }
 .content-container-AboutUS-content-h3{
+    margin-top: 8px;
     font-family: "Lato";
+    font-style: italic;
     font-weight: 100;
     line-height: 7px;
     font-size: 14px;
@@ -184,13 +221,16 @@ div > p> span {
     background: #ECF0F1;
     text-align: center;
 }
-.content-container-ContactUS-h1{
+.content-container-h1{
+    margin-top: 52px;
+    margin-bottom: 18px;
     font-size: 28px;
     color: #444444;
 }
-.content-container-ContactUS-p{
+.content-container-p{
     font-size: 14px;
     color: #444444;
+    font-weight: 500;
 }
 
 .content-container-ContactUS-content{
@@ -266,4 +306,6 @@ textarea{
     text-align: left;
     font-size: 13px;
     color: #444444;
+    font-weight: 500;
+    letter-spacing: 1px;
 }

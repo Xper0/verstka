@@ -18,22 +18,28 @@
 .header-container-nav-logo{
     margin: 26px 40px;
     display: flex;
-    align-items: center;
+
 
 }
 .header-container-nav-logo-text{
+    display: flex;
+    flex-direction: column;
     font-family: "Lato";
     margin-left: 14px;
 }
 .header-container-nav-logo-text-h1{
     font-family: "Lato";
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 5px;
+
 
 }
 .header-container-nav-logo-text-p{
     font-family: "Lato";
-    font-size: 8px;
+    font-size: 14px;
+    line-height: 2px;
 
 }
 
@@ -42,6 +48,7 @@
     box-sizing: border-box;
     display: flex;
     list-style: none;
+    margin-right: 63px;
 }
 .navBar-list-item{
     box-sizing: border-box;
@@ -59,6 +66,7 @@
 .navBar-list-item:hover {
     box-sizing: border-box;
     background: #1BBC9B;
+    color: #eeeeee;
 
 
 }
@@ -84,19 +92,26 @@
 }
 
 .Jumbotron-conteiner-content-h1{
+    font-stretch: condensed;
+    font-family: "Lato" ;
+    font-weight: 100;
+    margin-bottom: 41px;
     font-size: 55px;
-    font-weight: 300;
     color: #eeeeee;
 }
 .Jumbotron-conteiner-content-h1 > span{
     font-family: "Lato";
-    font-weight: 600;
+    font-weight: 900;
+    color: #eeeeee;
 }
 
 .Jumbotron-conteiner-content-p{
+    opacity: 0.7;
     font-family: "Lato";
     font-size: 18px;
     color: #eeeeee;
+    width: 634px;
+    margin-bottom: 45px;
 
 }
 .Jumbotron-conteiner-content-btn{
@@ -106,6 +121,7 @@
     color: #eeeeee;
     font-family: "Lato";
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 .Jumbotron-conteiner-content-btnarrow{
@@ -117,10 +133,10 @@
     border-radius: 50%;
     background: #FFFFFF;
     outline: none;
-    font-size: 35px;
     cursor: pointer;
 
 }
+
 .Jumbotron-conteiner-content-btn:hover,
 .Jumbotron-conteiner-content-btnarrow:hover{
     background: #16A086;

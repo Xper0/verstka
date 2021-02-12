@@ -12,7 +12,7 @@ export default function Footer() {
             </div>
             <div className="footer-conteiner-content">
                 <button className="footer-conteiner-btn">
-                    <i className="fa fa-angle-up" aria-hidden="true"></i>
+                    <i className="fa fa-chevron-up" aria-hidden="true"></i>
                 </button>
             </div>
 

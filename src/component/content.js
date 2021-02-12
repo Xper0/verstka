@@ -7,16 +7,34 @@ import setting from "../img/img-3.svg";
 import brouser from "../img/img-4.svg";
 import phone from "../img/img-5.svg";
 import gallery from "../img/img-6.svg";
-import {Map, YMaps, Placemark, GeoObject} from 'react-yandex-maps';
+import {Map, YMaps, Placemark, RouteButton, GeoObject } from 'react-yandex-maps';
 
 
 
 
 export default function Content({data}) {
-    const coordinate = [55.798682, 37.695816]
+    const coordinate = [55.798682, 37.695816];
+    const [stasion, setStation] = React.useState("")
+    const xml = new XMLHttpRequest();
+    const url = "https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0a376abe-ae78-452f-8151-85d77102c1fb"
+    React.useEffect(() => {
+        xml.open("GET", url, true)
+        xml.onload =  () => {
+            if (xml.status >= 400){
+                console.error(xml.response)
+            }else {
+                setStation()
+
+            }
+        }
+        xml.send()
+
+    },[])
+
+
     const infoUsers = data.data.AboutUs
     const img = [foto, music, setting, brouser, phone, gallery, foto, music]
-    const buttons = ["ALL", "WEB DESIGN", "GRAPHIC DESIGN", "FLAT DESIGN"]
+    const buttons = ["All", "WEB DESIGN", "GRAPHIC DESIGN", "FLAT DESIGN"]
     const [images, setImages] = React.useState(img)
 
     const handleclick = (e) => { // функция перебора кнопок с фильтрацией картинок
@@ -41,7 +59,7 @@ export default function Content({data}) {
         <div className="content-container">
             <section className="content-container-portfolio">
                 <div>
-                    <h1 > Portfolio</h1>
+                    <h1 className="content-container-portfolio-h1"> Portfolio</h1>
                     <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </div>
                 <ul className="content-container-portfolio-list">
@@ -57,7 +75,9 @@ export default function Content({data}) {
                     {images.map( (itemImg, id)  =>
                         <div onChange={setImages} key={id} className="content-container-portfolio-imgconeiner">
                             <img  className="img" src={itemImg} alt={itemImg}/>
+
                         </div>
+
 
                     )}
                 </div>
@@ -65,8 +85,8 @@ export default function Content({data}) {
             </section>
             <section className="content-container-AboutUS">
                 <div>
-                    <h1 className="text-color"><span>AboutUS</span></h1>
-                    <p className="text-color"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span></p>
+                    <h1 className="content-container-AboutUS-h1"><span>About US</span></h1>
+                    <p className="content-container-AboutUS-p"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span></p>
                 </div>
                 <div className="content-container-AboutUS-row">
                     {infoUsers.map( item => <div key={item.id} className="content-container-AboutUS-content">
@@ -126,6 +146,8 @@ export default function Content({data}) {
                                    defaultState={{
                                        center: coordinate,
                                        zoom: 13,
+                                       controls: []
+
 
                                    }}>
                                    {<Placemark
@@ -153,6 +175,28 @@ export default function Content({data}) {
                                            strokeColor: '#F008',
                                        }}
                                    />
+
+
+                                  <RouteButton
+                                      instanceRef={ref => {
+                                          if (ref) {
+                                              ref.routePanel.state.set({
+
+                                                  toEnabled: false,
+                                                  from: stasion,
+                                                  to: "Москва, Колодезный переулок д.2а ",
+                                                  type: 'auto',
+                                              });
+                                              ref.routePanel.options.set({
+                                                  allowSwitch: false,
+                                                  reverseGeocoding: true,
+                                                  types: { masstransit: true, pedestrian: true, taxi: true }
+                                              })
+                                          }
+
+                                  }}
+                                  />
+
                                </Map>
                            </YMaps>
                        </div>
