@@ -8,8 +8,8 @@ function Header() {
     const navigation = ["HOME", "PORTFOLIO", "ABOUT", "CONTACT"];
     return (
         <div className="header-container">
-            <div className="header-container-nav">
-                <div className="header-container-nav-logo">
+            <div className="header-container__nav">
+                <div className="header-container__logo">
                     <div>
                         <img src={logo} alt="logo" title="logo" />
                     </div>

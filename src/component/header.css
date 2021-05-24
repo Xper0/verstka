@@ -10,12 +10,12 @@
     flex-wrap: wrap;
 
 }
-.header-container-nav{
+.header-container__nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-container-nav-logo{
+.header-container__logo{
     margin: 26px 40px;
     display: flex;
 

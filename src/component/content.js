@@ -39,7 +39,9 @@ export default function Content({data}) {
 
     const handleclick = (e) => { // функция перебора кнопок с фильтрацией картинок
         //Плохой вариант
+        console.log(e)
         const btn = document.querySelectorAll('.content-container-portfolio-item')
+        console.log(btn)
         if(e === btn[0]){
             return setImages(img)
         }else if(e === btn[1]){
@@ -70,6 +72,7 @@ export default function Content({data}) {
                             onClick={e => handleclick(e.target)}
                         >
                             {btn}</button>)}
+
                 </ul>
                 <div className="content-container-portfolio-img">
                     {images.map( (itemImg, id)  =>
