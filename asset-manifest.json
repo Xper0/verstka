@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/verstka/static/css/main.427e7372.chunk.css",
-    "main.js": "/verstka/static/js/main.169f6163.chunk.js",
-    "main.js.map": "/verstka/static/js/main.169f6163.chunk.js.map",
-    "runtime-main.js": "/verstka/static/js/runtime-main.756929e1.js",
-    "runtime-main.js.map": "/verstka/static/js/runtime-main.756929e1.js.map",
-    "static/js/2.f891f766.chunk.js": "/verstka/static/js/2.f891f766.chunk.js",
-    "static/js/2.f891f766.chunk.js.map": "/verstka/static/js/2.f891f766.chunk.js.map",
-    "static/js/3.923de364.chunk.js": "/verstka/static/js/3.923de364.chunk.js",
-    "static/js/3.923de364.chunk.js.map": "/verstka/static/js/3.923de364.chunk.js.map",
+    "main.css": "/verstka/static/css/main.ff9c97b2.chunk.css",
+    "main.js": "/verstka/static/js/main.e8ed5043.chunk.js",
+    "main.js.map": "/verstka/static/js/main.e8ed5043.chunk.js.map",
+    "runtime-main.js": "/verstka/static/js/runtime-main.ff27de2d.js",
+    "runtime-main.js.map": "/verstka/static/js/runtime-main.ff27de2d.js.map",
+    "static/js/2.378e1cdd.chunk.js": "/verstka/static/js/2.378e1cdd.chunk.js",
+    "static/js/2.378e1cdd.chunk.js.map": "/verstka/static/js/2.378e1cdd.chunk.js.map",
+    "static/js/3.4238897f.chunk.js": "/verstka/static/js/3.4238897f.chunk.js",
+    "static/js/3.4238897f.chunk.js.map": "/verstka/static/js/3.4238897f.chunk.js.map",
     "index.html": "/verstka/index.html",
-    "static/css/main.427e7372.chunk.css.map": "/verstka/static/css/main.427e7372.chunk.css.map",
-    "static/js/2.f891f766.chunk.js.LICENSE.txt": "/verstka/static/js/2.f891f766.chunk.js.LICENSE.txt",
+    "static/css/main.ff9c97b2.chunk.css.map": "/verstka/static/css/main.ff9c97b2.chunk.css.map",
+    "static/js/2.378e1cdd.chunk.js.LICENSE.txt": "/verstka/static/js/2.378e1cdd.chunk.js.LICENSE.txt",
     "static/media/ava-1.783a8e07.svg": "/verstka/static/media/ava-1.783a8e07.svg",
     "static/media/ava-2.2357dc84.svg": "/verstka/static/media/ava-2.2357dc84.svg",
     "static/media/ava-3.0d9d6556.svg": "/verstka/static/media/ava-3.0d9d6556.svg",
@@ -27,9 +27,9 @@
     "static/media/logo.ca497cef.svg": "/verstka/static/media/logo.ca497cef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.756929e1.js",
-    "static/js/2.f891f766.chunk.js",
-    "static/css/main.427e7372.chunk.css",
-    "static/js/main.169f6163.chunk.js"
+    "static/js/runtime-main.ff27de2d.js",
+    "static/js/2.378e1cdd.chunk.js",
+    "static/css/main.ff9c97b2.chunk.css",
+    "static/js/main.e8ed5043.chunk.js"
   ]
 }
